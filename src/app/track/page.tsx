@@ -3,7 +3,7 @@ import { FiInbox } from 'react-icons/fi'
 
 const Page = () => {
   return (
-    <div className="flex flex-col items-center justify-center h-full text-center px-4">
+    <div className="flex flex-col items-center justify-center h-full  min-h-screen text-center px-4">
       <div className="bg-orange-50 p-6 rounded-full shadow-md mb-6">
         <FiInbox size={48} className="text-orange-500" />
       </div>

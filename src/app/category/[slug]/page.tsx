@@ -5,6 +5,7 @@ import { useParams, useRouter } from 'next/navigation'
 import ProductCard from '@/Components/ProductCard'
 import { categoryIcons } from '@/Components/caticons'
 import { FaBox } from 'react-icons/fa'
+import Loading from '@/app/loading'
 
 type Category = {
   name: string
@@ -74,7 +75,7 @@ const CategoryPage = () => {
   )
 
   if (categories.length === 0) {
-    return <div className="p-6 text-gray-500">Loading categories...</div>
+    return <div className="p-6 text-gray-500"><Loading/></div>
   }
 
   if (!selectedCategory) {

@@ -7,6 +7,7 @@ import { useEffect, useState } from 'react'
 import { BiCartAdd } from 'react-icons/bi'
 import { FaThumbsUp, FaThumbsDown, FaStar, FaStarHalfAlt, FaRegStar, FaShoppingCart, FaHeart } from 'react-icons/fa'
 import Link from 'next/link'
+import Loading from '@/app/loading'
 
 type Product = {
   meta: {
@@ -113,7 +114,7 @@ export default function ProductPage() {
     fetchRecommendations();
   }, [product]);
 
-  if (loading || !product) return <p className="p-4">Loading product...</p>
+  if (loading || !product) return <div className="p-4"><Loading/></div>
 
   // Calculate sold and soldPercentage for stock tracker
   const sold = (product.stock + 20) - product.stock;

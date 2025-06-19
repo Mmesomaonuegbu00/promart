@@ -49,7 +49,7 @@ useEffect(() => {
 
     return (
         <div className='w-full'>
-            <div className='w-full mx-auto flex gap-3 px-2 py-2'>
+            <div className='w-full mx-auto flex gap-3  py-1'>
                 {/* 👉 Category Sidebar */}
                 <div className='hidden xl:flex flex-col gap-4 bg-gray-100 p-4 overflow-x-auto scrollbar-hide rounded-md w-1/6 h-[26rem] scrollbar-thin py-3'>
                     <h3 className='font-bold text-md mb-2'>Shop by Category</h3>
@@ -72,17 +72,17 @@ useEffect(() => {
                         })}
                     </ul>
                 </div>
-                <section className="relative w-full bg-gradient-to-br from-orange-600 to-pink-900 rounded-md lg:py-6 overflow-hidden h-[12rem] md:h-[15rem] lg:h-[26rem] xl:w-[90%]">
+                <section className="relative w-full bg-gradient-to-br from-orange-600 to-pink-900 xl:rounded-md lg:py-6 overflow-hidden h-[12rem] md:h-[15rem] lg:h-[26rem] xl:w-[90%]">
 
 
-                    <div className="absolute top-12 right-10 bg-pink-200 text-pink-800 px-3 py-1 rounded-full text-xs font-semibold shadow-md z-50">
+                    <div className="absolute top-12 right-10 bg-pink-200 text-pink-800 px-3 py-1 rounded-full text-xs font-semibold shadow-md z-30">
                         🎁 Free Shipping!
                     </div>
                     <div className="absolute top-32 right-28 bg-blue-200 text-blue-800 px-3 py-1 rounded-full text-xs font-semibold hidden sm:block shadow-md z-50">
                         🕒 Limited Time Offer
                     </div>
 
-                    <div className="relative z-10 flex flex-row items-center  px-2 lg:px-6 gap-10 w-[90%] ">
+                    <div className="relative z-10 flex flex-row items-center  lg:px-6 gap-10 w-[90%] ">
                         <motion.div
                             initial={{ opacity: 0, x: -30 }}
                             animate={{ opacity: 1, x: 0 }}
@@ -107,7 +107,7 @@ useEffect(() => {
                             initial={{ opacity: 0 }}
                             animate={{ opacity: 1 }}
                             transition={{ duration: 1 }}
-                            className="h-[10rem] lg:h-[28rem] absolute top-0 right-0 object-cover w-fit md:w-auto"
+                            className="h-[12rem] md:h-[15rem] lg:h-[26rem] absolute top-0 right-0 object-cover w-fit md:w-auto"
                         />
                     </div>
 

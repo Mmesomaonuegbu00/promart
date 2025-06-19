@@ -30,7 +30,7 @@ const Tags = () => {
   }, []);
 
   return (
-    <div className="w-full bg-gray-100 px-4 py-2">
+    <div className="w-full bg-gray-100 px-4 py-1 mt-2">
       <div className="flex overflow-x-auto gap-3 scrollbar-hide">
         {categories.length === 0 ? (
           <span className="text-sm text-gray-500">Loading tags...</span>
@@ -39,7 +39,7 @@ const Tags = () => {
             <button
               key={cat.slug}
               onClick={() => router.push(`/category/${cat.slug}`)}
-              className="whitespace-nowrap  py-1.5  text-sm text-gray-700 hover:border-orange-500 hover:text-orange-600 transition"
+              className="whitespace-nowrap    text-sm text-gray-700 hover:border-orange-500 hover:text-orange-600 transition"
             >
               {cat.name}
             </button>
