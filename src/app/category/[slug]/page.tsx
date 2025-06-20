@@ -87,12 +87,12 @@ const CategoryPage = () => {
   }
 
   return (
-    <div className="p-4 xl:p-6 flex flex-col xl:flex-row gap-6">
+    <div className="p-4 xl:p-6 flex flex-col xl:flex-row gap-6 w-full">
       {/* Mobile Toggle */}
       <div className="xl:hidden mb-4">
         <button
           onClick={() => setSidebarOpen(!sidebarOpen)}
-          className="bg-orange-500 text-white text-sm px-4 py-1.5 rounded font-semibold"
+          className="bg-orange-500 text-white text-[12px] px-3 py-1 rounded font-semibold"
         >
           {sidebarOpen ? 'Close Categories' : 'Browse Other Categories'}
         </button>
@@ -135,8 +135,8 @@ const CategoryPage = () => {
       </aside>
 
       {/* Product Section */}
-      <main className="flex-1">
-        <h1 className="text-md font-bold mb-6 text-gray-800">
+      <main className="flex-1 w-full">
+        <h1 className="text-md font-bold mb-6 text-gray-800 ">
           Products in {selectedCategory.name}
         </h1>
 

@@ -158,7 +158,7 @@ const Header = () => {
             <Link href={user ? "/cart" : "/login"} className='relative'>
               <BsCartCheck className='text-gray-500 w-5 h-5 lg:w-6 lg:h-6 cursor-pointer' />
               {cartItems.length > 0 && (
-                <span className="absolute -top-2 -right-2 bg-red-500 text-white text-[11px] px-2 py-0.5 rounded-full">
+                <span className="absolute -top-2 -right-2 bg-red-500 text-white text-[8px] px-1.5 py-0.5 rounded-full">
                   {cartItems.length}
                 </span>
               )}

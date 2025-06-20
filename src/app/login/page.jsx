@@ -6,8 +6,8 @@ import { FiShoppingCart } from "react-icons/fi"
 
 export default function SignIn() {
   return (
-    <div className="bg-amber-100/70 min-h-screen flex items-center justify-center p-4">
-      <div className="w-full max-w-sm bg-white rounded-xl shadow-xs px-6 py-10 space-y-6 text-center">
+    <div className="min-h-screen flex items-center justify-center p-4">
+      <div className="w-full max-w-sm bg-orange-50/50 rounded-xl shadow-xs px-6 py-10 space-y-6 text-center">
         {/* Logo Section */}
         <div className="flex justify-center items-center gap-2 text-orange-600 text-2xl font-extrabold">
           <FiShoppingCart />
@@ -22,7 +22,7 @@ export default function SignIn() {
 
         <button
           onClick={() => signIn("google", { callbackUrl: "/" })}
-          className="flex items-center justify-center gap-2 w-full bg-white border border-gray-300 p-2 rounded-lg text-gray-700 hover:bg-orange-100 transition"
+          className="flex items-center justify-center gap-2 w-full bg-orange-600 border-none p-2 rounded-lg text-gray-100 hover:bg-orange-100 transition"
         >
           <CgGoogle size={20} />
           Sign in with Google
