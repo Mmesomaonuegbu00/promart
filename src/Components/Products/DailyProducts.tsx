@@ -107,7 +107,7 @@ const DailyProducts = () => {
   const breakpointColumnsObj = {
     default: 5,
     1000: 4,
-    600: 3,
+    600: 2,
     400: 2
   }
 
@@ -175,13 +175,13 @@ const DailyProducts = () => {
     })
 
   return (
-    <div className='w-full pt-10'>
+    <div className='w-full '>
       <div className='w-[95%] lg:w-[85%] mx-auto'>
         {error && <p className='text-red-600 mb-4'>{error}</p>}
 
         {/* Top Picks Section */}
         <div className='mb-6'>
-          <h2 className='md:text-xl font-semibold text-center mb-4'>Top Picks</h2>
+          <h2 className='md:text-xl font-semibold text-center mb-8'>Top Picks</h2>
           <div className="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-5 gap-4">
             {topPicks.map(p => renderProduct(p, true))}
           </div>

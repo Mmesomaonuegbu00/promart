@@ -65,13 +65,13 @@ const Deals = () => {
     }
 
     return (
-        <div className="w-full pt-6 pb-16">
+        <div className="w-full pt-6 pb-10">
             <div className="w-[95%] lg:w-[85%] mx-auto">
                 <div className="grid grid-cols-2 lg:grid-cols-4 gap-4 lg:gap-10 xl:grid-cols-4 justify-center ">
                     {dealItems.map((item, i) => (
                         <div
                             key={i}
-                            className="relative lg:w-[220px] xl:w-[360px] h-[100px] sm:h-[130px] xl:h-[160px] rounded-xl overflow-hidden shadow-xl bg-white"
+                            className="relative lg:w-[220px] xl:w-[360px] h-[90px] sm:h-[120px] xl:h-[160px] rounded-xl overflow-hidden shadow-xs bg-white"
                         >
                             <img
                                 src={item.image}

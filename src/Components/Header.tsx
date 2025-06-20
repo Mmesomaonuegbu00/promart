@@ -113,7 +113,7 @@ const Header = () => {
 
             {/* Chips */}
             {isFocused && search.length < 2 && (
-              <div className='absolute top-full mt-2 w-full bg-white px-4 py-3 rounded shadow z-20'>
+              <div className='absolute top-full mt-2 w-full bg-white px-4 py-3 rounded shadow z-50'>
                 <p className='text-sm font-medium mb-2'>Popular Searches</p>
                 <div className='flex flex-wrap gap-2'>
                   {topTags.slice(0, 10).map((tag, i) => (
@@ -131,7 +131,7 @@ const Header = () => {
 
             {/* Suggestions dropdown */}
             {isFocused && search.length > 1 && (
-              <div className='absolute top-full mt-2 w-full bg-white border border-gray-300 rounded shadow z-20 max-h-60 overflow-y-auto'>
+              <div className='absolute top-full mt-2 w-full z-50 bg-white border border-gray-300 rounded shadow z-20 max-h-60 overflow-y-auto'>
                 {suggestions.length === 0 ? (
                   <p className='text-sm p-2 text-gray-400'>No results found</p>
                 ) : (
